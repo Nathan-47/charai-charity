@@ -9,8 +9,108 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-          <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+        <!-- hero section  -->
+<header class="bg-gray-900">
+  <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <div class="flex lg:flex-1">
+    </div>
+    <div class="flex lg:hidden">
+      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+        <span class="sr-only">Open main menu</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <el-popover-group class="hidden lg:flex lg:gap-x-12">
+      <a href="#" class="text-sm/6 font-semibold text-white">Challenger</a>
+      <a href="#" class="text-sm/6 font-semibold text-white">For Charai</a>
+      <a href="#" class="text-sm/6 font-semibold text-white">Get Involved</a>
+      <a href="#" class="text-sm/6 font-semibold text-white">Contact</a>
+    </el-popover-group>
+  </nav>
+  <el-dialog>
+    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+      <div tabindex="0" class="fixed inset-0 focus:outline-none">
+        <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+          <div class="flex items-center justify-between">
+            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-white/10">
+              <div class="space-y-2 py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Challenger</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">For Charai</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Get Involved</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact</a>
+              </div>
+            </div>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+</header>
+
+         <!-- Challenge section  -->
+  <div class="mx-auto max-w-7xl -mt-20 py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div class="relative isolate overflow-hidden bg-gray-800 px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+      <svg viewBox="0 0 1024 1024" aria-hidden="true" class="absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0">
+        <circle r="512" cx="512" cy="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+        <defs>
+          <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+            <stop stop-color="#7775D6" />
+            <stop offset="1" stop-color="#E935C1" />
+          </radialGradient>
+        </defs>
+      </svg>
+      <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+        <h2 class="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">Join us to help Charai</h2>
+        <p class="mt-6 text-lg/8 text-pretty text-gray-300">Join us on Monday 16th March to raise funds and awareness for Charai as she battles Tropical Steroid Withdrawal (TSW). Your support will help fund her recovery and shine a light on this treatment caused condition.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+          <a href="#" class="rounded-full bg-gray-700 px-8 py-2.5 text-2xl font-semibold text-white border-radius: 100px
+          inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Donate to Charai</a>
+        </div>
+      </div>
+      <div class="relative mt-16 h-80 lg:mt-8">
+        <img width="auto" height="auto" src="/images/charai_hero.png" alt="Charai has her hair out and is smiling at the camera doing the peace sign pose." class="absolute -top-10 left-0 w-100 max-w-none rounded-md bg-white/5 ring-1 ring-white/10" />
+      </div>
+    </div>
+  </div>
+
+
+    <div class="mx-auto max-w-7xl -mt-24 py-24 sm:px-6 sm:py-32">
+    <div class="relative isolate overflow-hidden bg-gray-800 px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">s
+      <div class="w-full text-center lg:py-32">
+    <dl class="grid grid-cols-1 gap-x-8 gap-y-36 text-center lg:grid-cols-3">
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4 text-center ">
+        <img src="" alt="JD Gym Rugby logo" class="mx-auto h-16 w-auto">
+        <dd class="text-3xl font-semibold tracking-tight text-white sm:text-5xl">16th March</dd>
+      </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4 text-center ">
+        <img src="" alt="JD Gym Rugby logo" class="mx-auto h-16 w-auto">
+        <dd class="text-3xl font-semibold tracking-tight text-white sm:text-5xl">9am</dd>
+      </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4 text-center ">
+        <img src="" alt="JD Gym Rugby logo" class="mx-auto h-16 w-auto">
+        <dd class="text-3xl font-semibold tracking-tight text-white sm:text-5xl">JD Gym Rugby</dd>
+      </div>
+    </dl>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+          <!-- For Charai section  -->
+           <!-- Contact section  -->
     </body>
 </html>
