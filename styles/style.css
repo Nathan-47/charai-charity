@@ -1,0 +1,58 @@
+body {
+    font-family: 'Geist', sans-serif;
+    font-size: 1.1rem
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#hero-icon {
+    font-size: 4em !important;
+}
+#buttonTop {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    border: 1px solid #fafafa;
+    background-color: #292929;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    position: fixed; 
+    right: 5vw; 
+    bottom: 10vw;
+    margin-bottom: 5em;
+    width: auto;
+    text-align: center;
+    z-index: 100 !important;
+    cursor: pointer;
+}
+.buttonTop:hover {
+    background: #292929;
+    color: #fafafa;
+    opacity: 85%;
+}
+
+@media screen and (max-width: 1024px) {
+.buttonTop {bottom: 13vw;}
+}
+
+@media screen and (max-width: 768px) {
+.buttonTop {bottom: 20vw;} 
+}
+
+@media screen and (max-width: 500px) {
+.buttonTop {bottom: 26vw;}
+}
+
+@media screen and (max-width: 420px) {
+.buttonTop {bottom: 30vw;}
+}
+
+@media screen and (max-width: 360px) {
+.buttonTop {bottom: 32vw;}
+}
